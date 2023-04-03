@@ -7,7 +7,10 @@ jobs:
     steps:
       - checkout
       # Whatever you want to do
-      - run: npm install
-      - run: npm rn start
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          command: npm install
+     # - run: npm run start
       
   

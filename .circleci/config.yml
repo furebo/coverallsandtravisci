@@ -1,2 +1,17 @@
+ version: 2.1
 
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  say-hello:
+
+    docker:
+      - image: cimg/base:stable
+
+    steps:
+      - checkout
+      - run:
+          name: "Team-Furebo - E commerce tests"
+          command: "echo Hello, World!"
   

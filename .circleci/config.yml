@@ -12,7 +12,13 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
+          command: npm install
+          name: Install Dependencies
+      - run:
           command: npm ci
-     # - run: npm run start
+          name: Install Packages
+      - run:
+          command: npm start
+          name: Run the apllication
       
   

@@ -1,0 +1,23 @@
+{
+  "name": "coverallsandtravis",
+  "version": "1.0.0",
+  "description": "[![Coverage Status](https://coveralls.io/repos/github/furebo/coverallsandtravisci/badge.svg?branch=main)](https://coveralls.io/github/furebo/coverallsandtravisci?branch=main)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furebo/coverallsandtravisci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furebo/coverallsandtravisci/issues"
+  },
+  "homepage": "https://github.com/furebo/coverallsandtravisci#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

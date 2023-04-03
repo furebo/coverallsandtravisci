@@ -16,7 +16,7 @@ jobs:
           name: Install Dependencies
       - run:
           command: npm ci
-          name: Install Packages
+          name: Install Package
       - run:
           command: npm start
           name: Run the apllication

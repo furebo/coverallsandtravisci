@@ -1,0 +1,20 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.2
+  coveralls: coveralls/coveralls@2.0.0
+
+jobs:
+  say-hello:
+
+    steps:
+      - checkout
+      - run:
+          name: "Circle ci and coverals"
+          command: "echo Hello, World!"
+          
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
+  

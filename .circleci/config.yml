@@ -10,7 +10,7 @@ jobs:
       - checkout
       # Whatever you want to do
       - node/install:
-          install-npm: true
+          install-yarn: true
           node-version: '16.13'
       - run: node --version
       

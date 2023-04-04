@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
-  node: circleci/node@5.1.0
+  node: circleci/node@5.2.0
 
 jobs:
   build:
     docker:
-      - image: cimg/base:2023.04
+      - image: cimg/base:stable
     steps:
       - checkout
       # Whatever you want to do

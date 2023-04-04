@@ -12,11 +12,8 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
-          command: npm install
-          name: Install Dependencies
-      - run:
           command: npm ci
-          name: Install Package
+          name: Install Dependencies
       - run:
           command: npm start
           name: Run the apllication

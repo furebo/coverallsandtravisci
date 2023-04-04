@@ -9,13 +9,8 @@ jobs:
     steps:
       - checkout
       # Whatever you want to do
-      - node/install-packages:
-          pkg-manager: npm
-      - run:
-          command: npm install
-          name: Install Dependencies
-      - run:
-          command: npm start
-          name: Run the apllication
+      - node/install:
+          install-npm: true
+          node-version: '16.13'
+      - run: node --version
       
-  

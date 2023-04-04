@@ -13,5 +13,5 @@ jobs:
           install-yarn: true
           node-version: '16.13'
       - run: npm install
-      #- run: npm start
+      - run: npm test
       

@@ -4,10 +4,11 @@
   "description": "[![Coverage Status](https://coveralls.io/repos/github/furebo/coverallsandtravisci/badge.svg?branch=main)](https://coveralls.io/github/furebo/coverallsandtravisci?branch=main)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "test": "nyc --reporter=lcov --reporter=text mocha tests.js --timeout 60000 --require @babel/register --exit",
+    "start": "node index.js"
   },
-  "repository": {
+    "type": "module",
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/furebo/coverallsandtravisci.git"
   },
@@ -18,6 +19,12 @@
   },
   "homepage": "https://github.com/furebo/coverallsandtravisci#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "@babel/register": "^7.21.0",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0"
   }
 }

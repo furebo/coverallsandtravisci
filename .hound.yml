@@ -2,6 +2,4 @@ java_script:
   enabled: true
   config_file: config/javascript.json
 
-  jshint:
-  config_file: .jshintrc
-  
+ 

@@ -13,4 +13,4 @@ const operations = {
 }
 
 
-  module.exports = operations;
+ export default operations;

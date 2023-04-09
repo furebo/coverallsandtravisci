@@ -1,5 +1,5 @@
-const operations = {
-    sum : (x,y) => {
+module.exports = {
+     sum :(x,y)=> {
       return x + y;
        
      },
@@ -12,4 +12,5 @@ const operations = {
 
 }
 
-  export default operations;
+
+  
